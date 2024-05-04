@@ -9,5 +9,10 @@ package com.mycompany.manageemployeesalary;
  * @author Student
  */
 public class Employee {
+    private String code;
+    private String fullName;
+    private int yearsOfService;
+    private double salaryCoefficient;
+    private double basicSalary;
     
 }
