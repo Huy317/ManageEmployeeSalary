@@ -5,6 +5,8 @@
 package com.mycompany.manageemployeesalary;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 /**
@@ -38,13 +40,21 @@ public class SalaryList {
         }
         for (Employee i : list){
             if (i.getSalary() == maxSalary){
+                System.out.println("---------Hightest Salary------");
                 i.printEmployee();
             }
         } 
     }
-    public SalaryList sort(){
-        
+    Comparator<Employee> comSalary = new Comparator<Employee>(){
+            @Override
+            public int compare(Employee o1, Employee o2) {
+                return (int)(o2.getSalary() - o1.getSalary());
+            }
+        };
+    public void sort(){
+        Collections.sort(list,comSalary);
     }
+    
     public void printSalary(){
         for (Employee i : list){
             i.printEmployee();

@@ -33,18 +33,19 @@ public class Employee {
     }
     public void Input(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Code: ");
+        System.out.print("Code: ");
         code = sc.nextLine();
-        System.out.println("FullName: ");
+        System.out.print("FullName: ");
         fullName = sc.nextLine();
-        System.out.println("Years of service: ");
+        System.out.print("Years of service: ");
         yearsOfService = sc.nextInt();
-        System.out.println("Salary Coefficient: ");
+        System.out.print("Salary Coefficient: ");
         salaryCoefficient = sc.nextDouble();
-        System.out.println("Basic Salary: ");
+        System.out.print("Basic Salary: ");
         basicSalary = sc.nextDouble();
     }
     public void printEmployee(){
+        System.out.println("------------------------------");
         System.out.println("Code: "+code+"\nFullName:"+fullName+"\nSalary: "+this.getSalary());
     }
 }
