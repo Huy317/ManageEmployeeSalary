@@ -51,7 +51,7 @@ public class SalaryList {
                 return (int)(o2.getSalary() - o1.getSalary());
             }
         };
-    public void sort(){
+    public void sortSalary(){
         Collections.sort(list,comSalary);
     }
     

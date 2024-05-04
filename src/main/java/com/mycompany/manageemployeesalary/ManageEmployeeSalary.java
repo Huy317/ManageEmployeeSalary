@@ -14,7 +14,7 @@ public class ManageEmployeeSalary {
         SalaryList list = new SalaryList();
         list.Input();
         list.printHighestSalary();
-        list.sort();
+        list.sortSalary();
         list.printSalary();
     }
 }
