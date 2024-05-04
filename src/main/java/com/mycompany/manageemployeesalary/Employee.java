@@ -11,6 +11,7 @@ import java.util.Scanner;
  * @author Student
  */
 public class Employee {
+
     private String code;
     private String fullName;
     private int yearsOfService;
@@ -27,11 +28,12 @@ public class Employee {
 
     public Employee() {
     }
-    
-    public double getSalary(){
+
+    public double getSalary() {
         return salaryCoefficient * basicSalary;
     }
-    public void Input(){
+
+    public void Input() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Code: ");
         code = sc.nextLine();
@@ -44,8 +46,9 @@ public class Employee {
         System.out.print("Basic Salary: ");
         basicSalary = sc.nextDouble();
     }
-    public void printEmployee(){
+
+    public void printEmployee() {
         System.out.println("------------------------------");
-        System.out.println("Code: "+code+"\nFullName:"+fullName+"\nSalary: "+this.getSalary());
+        System.out.println("Code: " + code + "\nFullName:" + fullName + "\nSalary: " + this.getSalary());
     }
 }
